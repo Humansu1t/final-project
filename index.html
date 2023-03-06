@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jet ski shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&family=Staatliches&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/fonts.css">
+<link rel="stylesheet" href="./css/slick.css">    
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+<!------------------------------HEADERS-------------------------------------------------------->
+    <header class="header">
+    <div class="header-top">
+       
+            <div class="nav-links">
+                <nav class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                Магазины
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                Акции
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                Доставка и оплата
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="logo">
+                    <img src="./images/logo.svg" alt="our-logo">
+                </a>
+                <div class="header-box">
+                    <p class="header-adress">
+                        Москва,  ул. Науки  25
+                    </p>
+                    <ul class="user-list">
+                        <li class="user-items">
+                            <a href="#">
+                                <img src="./images/heart.svg" alt="favs">
+                            </a>
+                        </li>
+                        <li class="user-items">
+                            <a href="">
+                                <img src="./images/user.svg" alt="useer">
+                            </a>
+                        </li>
+                        <li class="user-items">
+                            <a href="">
+                                <img src="./images/cart.svg" alt="cart">
+                                <p>1</p>
+                            </a>
+                            <p>1</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+    </div>
+    <div class="header-bottom">
+        
+            <ul class="categories">
+                
+                    <li>
+                        <a href="#" class="links">Квадроциклы</a>
+                    </li>
+                    <li>
+                        <a href="#" class="links">Катера</a>
+                    </li>
+                    <li>
+                        <a href="#" class="links">Гидроциклы</a>
+                    </li>
+                    <li>
+                        <a href="#" class="links">Лодки</a>
+                    </li>
+                    <li>
+                        <a href="#" class="links">Вездеходы</a>
+                    </li>
+                    <li>
+                        <a href="#" class="links">Снегоходы</a>
+                    </li>
+                    <li>
+                        <a href="#" class="links">Двигатели</a>
+                    </li>
+                    <li>
+                        <a href="#" class="links">Запчасти</a>
+                    </li>
+            
+            </ul>
+        
+    </div>
+</header>
+
+
+<!--------------------------------Banner------------------------------------->
+    <section class="banner-section">
+        <div class="banner-section-content">
+            <div class="banner-slider">
+               <a href="#" class="slider-item">
+                <img src="./images/banner-1.jpg" alt="banner">
+               </a>
+               <a  href="#" class="slider-item">
+                <img src="./images/banner-2.jpg" alt="banner">
+               </a>
+               <a href="#" class="slider-item">
+                <img calss="banner-3" src="./images/banner-3.jpg" alt="banner">
+               </a>
+               <a href="#" class="slider-item">
+                <img src="./images/banner-4.jpg" alt="banner">
+               </a>
+               <a href="#" class="slider-item">
+                <img src="./images/banner-5.jpg" alt="banner">
+               </a>
+               <a href="#" class="slider-item">
+                <img src="./images/banner-6.jpg" alt="banner">
+               </a>
+            </div>
+            <a href="#" class="sale-item">
+               <div class="sale-item-top">
+                    <p class="sale-item-info">акция</p>
+                    <div class="sale-item-price">
+                        <p class="price-new price">190 000</p>
+                        <p class="price-old price">225 000</p>
+                    </div>
+               </div>  
+               <img src="./images/content/sale1.png" alt="sale">   
+               <h5>Лодочный мотор <br>
+                Suzuki DF9.9BRS</h5>
+                <p class="sale-item-footer">
+                    Акция действует до
+                    <span>31.08.2020</span>
+                </p>
+            </a>
+        
+        </div>
+    </section>
+
+<!-------------------------------------TABS------------------------------------------------------->
+<div class="search">
+        <div class="search-tabs">
+            <a class="tabs-item tab-active" href="#tab-1">
+                Поиск по номеру
+            </a>
+            <a class="tabs-item" href="#tab-2">
+                Поиск по марке
+            </a>
+            <a class="tabs-item" href="#tab-3">
+                Поиск по названию товара
+            </a>
+        </div>
+        <div class="search-content">
+            <div id="tab-1" class="search-content-item search-active">
+                <form>
+                    <input type="text" placeholder="Введите номер">
+                    <button type="submit">искать</button>
+                </form>
+            </div>
+            <div id="tab-2" class="search-content-item">
+                <form>
+                    <input type="text" placeholder="Введите марку">
+                    <button type="submit">искать</button>
+                </form>
+            </div>
+            <div id="tab-3" class="search-content-item">
+                <form>
+                    <input type="text" placeholder="Введите название товара">
+                    <button type="submit">искать</button>
+                </form>
+            </div>
+        </div>
+</div>
+
+<!------------------------------------------CATALOGS---------------------------------------------------->
+<section class="catalogs">
+    <div class="catalogs-inner">
+        <a href="./catalogs/atv-catalog.html" class="catalog-links">
+            <div class="catalog-info">
+            <h4>Квадроциклы</h4>
+            <p>Подробнее</p>
+        </div>
+        <div class="catalog-img">
+            <img src="./images/atv.png" alt="atv">
+        </div>
+            
+        </a>
+        <a href="./catalogs/jet-ski-catalog.html" class="catalog-links">
+            <div class="catalog-info">
+            <h4>Гидроциклы</h4>
+            <p>Подробнее</p>
+        </div>
+        <div class="catalog-img">
+             <img src="./images/jet-ski.png" alt="jet-ski">
+        </div>
+           
+        </a>
+        <a href="./catalogs/speedboat-catalog.html" class="catalog-links">
+            <div class="catalog-info">
+            <h4>Катера</h4>
+            <p>Подробнее</p>
+        </div>
+        <div class="catalog-img">
+            <img src="./images/speedboat.png" alt="speedboat">
+        </div>
+            
+        </a>
+        <a href="./catalogs/snowmobile-catalog.html" class="catalog-links">
+            <div class="catalog-info">
+            <h4>Снегоходы</h4>
+            <p>Подробнее</p>
+        </div>
+        <div class="catalog-img">
+            <img src="./images/snowmobile.png" alt="snowmobile">
+        </div>
+            
+        </a>
+        <a href="./catalogs/rover-catalog.html" class="catalog-links">
+            <div class="catalog-info">
+            <h4>Вездеходы</h4>
+            <p>Подробнее</p>
+        </div>
+        <div class="catalog-img">
+            <img src="./images/rover.png" alt="rover">
+        </div>
+            
+        </a>
+        <a href="./catalogs/engines-catalog.html" class="catalog-links">
+            <div class="catalog-info">
+            <h4>Двигатели</h4>
+            <p>Подробнее</p>
+        </div>
+        <div class="catalog-img">
+            <img src="./images/engine.png" alt=""engine>
+        </div>
+            
+        </a>
+    </div>
+</section>
+<!------------------------------------------------------------------------------------------>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
