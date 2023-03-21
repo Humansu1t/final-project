@@ -8,18 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&family=Staatliches&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <link rel="stylesheet" href="./css/fonts.css">
-<link rel="stylesheet" href="./css/slick.css">    
+<link rel="stylesheet" href="./css/slick.css">  
 <link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/media.css">  
 </head>
 <body>
     <div class="wrapper">
-<!------------------------------HEADERS-------------------------------------------------------->
-    <header class="header">
-    <div class="header-top">
-       
+    <header class="header center">
+        <div class="header-top">
             <div class="nav-links">
                 <nav class="menu">
+                    <button class="menu-btn">
+                        <img src="./images/burger-menu.svg" alt="burger-menu">
+                    </button>
                     <ul class="menu-list">
                         <li class="menu-item">
                             <a href="#" class="menu-link">
@@ -38,7 +41,7 @@
                         </li>
                     </ul>
                 </nav>
-                <a href="#" class="logo">
+                <a href="./log.html" class="logo animate__animated animate__backInDown">
                     <img src="./images/logo.svg" alt="our-logo">
                 </a>
                 <div class="header-box">
@@ -66,8 +69,8 @@
                     </ul>
                 </div>
             </div>
-        
     </div>
+
     <div class="header-bottom">
         
             <ul class="categories">
@@ -100,11 +103,98 @@
             </ul>
         
     </div>
+    <ul class="menu-mobile-list animate__animated animate__bounceInRight">
+        <li class="menu-mobile-item">
+            <a href="./log.html">
+                <img src="./images/user.svg" alt="user">
+                <p>Войти</p>
+            </a>
+        </li>
+        <li class="menu-mobile-item">
+            <a href="./log.html">
+                <img src="./images/user.svg" alt="user">
+                <p>Регистрация</p>
+            </a>
+        </li>
+        <li class="menu-mobile-item">
+            <a href="#">
+                <img src="./images/fav.svg" alt="heart">
+                <p>Избранное</p>
+            </a>
+        </li>
+        <li class="menu-mobile-item">
+            <a href="#">
+                <img src="./images/cart.svg" alt="cart">
+                <p>Корзина</p>
+            </a>
+        </li>
+        <li class="menu-mobile-item">
+            <a href="#">
+                <img src="./images/market.svg" alt="market">
+                <p>Магазины</p>
+            </a>
+        </li>
+        <li class="menu-mobile-item">
+            <a href="#">
+                <img src="./images/sales.svg" alt="sales">
+                <p>Акции</p>
+            </a>
+        </li>
+        <li class="menu-mobile-item">
+            <a href="#">
+                <img src="./images/delivery.svg" alt="delivery">
+                <p>Доставка и оплата</p>
+            </a>
+        </li>
+        <li class="menu-mobile-item">
+            <a href="./catalogs/atv-catalog.html">
+                <p>Квадроциклы</p>
+            </a>
+        </li>
+        <li class="menu-mobile-item">
+            <a href="./catalogs/speedboat-catalog.html">
+                <p>Катера</p>
+            </a>
+        </li>
+        <li class="menu-mobile-item">
+            <a href="./catalogs/jet-ski-catalog.html">
+                <p>Гидроциклы</p>
+            </a>
+        </li>
+        <li class="menu-mobile-item">
+            <a href="#">
+                <p>Лодки</p>
+            </a>
+        </li>
+        <li class="menu-mobile-item">
+            <a href="./catalogs/rover-catalog.html">
+                <p>Вездеходы</p>
+            </a>
+        </li>
+        <li class="menu-mobile-item">
+            <a href="./catalogs/snowmobile-catalog.html">
+                <p>Снегоходы</p>
+            </a>
+        </li>
+        <li class="menu-mobile-item">
+            <a href="./catalogs/engines-catalog.html">
+                <p>Двигатели</p>
+            </a>
+        </li>
+        <li class="menu-mobile-item">
+            <a href="#">
+                <p>Запчасти</p>
+            </a>
+        </li>
+        <li class="menu-mobile-item">
+            <p class="adress"> Москва,  ул. Науки  25</p>
+        </li>
+    </ul>
 </header>
 
 
-<!--------------------------------Banner------------------------------------->
-    <section class="banner-section">
+
+    <section class="banner-section center">
         <div class="banner-section-content">
             <div class="banner-slider">
                <a href="#" class="slider-item">
@@ -114,7 +204,7 @@
                 <img src="./images/banner-2.jpg" alt="banner">
                </a>
                <a href="#" class="slider-item">
-                <img calss="banner-3" src="./images/banner-3.jpg" alt="banner">
+                <img src="./images/banner-3.jpg" alt="banner">
                </a>
                <a href="#" class="slider-item">
                 <img src="./images/banner-4.jpg" alt="banner">
@@ -146,9 +236,11 @@
         </div>
     </section>
 
-<!-------------------------------------TABS------------------------------------------------------->
-<div class="search">
-        <div class="search-tabs">
+
+<div class="search center">
+    
+        <div class="search-tabs tabs-wrapper">
+            <div class="mobile-overflow">
             <a class="tab tabs-item tab-active" href="#tab-1">
                 Поиск по номеру
             </a>
@@ -159,6 +251,8 @@
                 Поиск по названию товара
             </a>
         </div>
+    
+    </div>
         <div class="search-content">
             <div id="tab-1" class="tabs-content search-content-item tabs-content-active">
                 <form>
@@ -181,8 +275,7 @@
         </div>
 </div>
 
-<!------------------------------------------CATALOGS---------------------------------------------------->
-<section class="catalogs">
+<section class="catalogs center">
     <div class="catalogs-inner">
         <a href="./catalogs/atv-catalog.html" class="catalog-links">
             <div class="catalog-info">
@@ -246,12 +339,12 @@
         </a>
     </div>
 </section>
-<!------------------------------------Popular products------------------------------------------------------>
-    <section class="products">
+
+    <section class="products center">
         <div class="products-inner">
             <h1 class="product-title">Популярные товары</h1>
             <div class="tabs-wrapper">
-                <div class="tabs products-tabs">
+                <div class="tabs products-tabs mobile-overflow">
                     <a class="tab tab-active products-tab" href="#tab1">запчасти</a>
                     <a class="tab products-tab" href="#tab2">моторы</a>
                     <a class="tab products-tab" href="#tab3">шины</a>
@@ -270,7 +363,7 @@
                                     <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
                                     <a href="#" class="product-item">
                                         <p class="product-hover-text">посмотреть товар</p>
-                                        <img src="./images/content/product-1.png" alt="">
+                                        <img src="./images/content/product-1.png" alt="bag">
                                         <h4>Водонепроницаемый
                                             Рюкзак</h4>
                                         <p class="price">9 800 ₽</p>
@@ -285,10 +378,9 @@
                                     <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
                                     <a href="#" class="product-item product-sale">
                                         <p class="product-hover-text">посмотреть товар</p>
-                                        <img src="./images/content/product-1.png" alt="">
-                                        <h4>Водонепроницаемый
-                                            Рюкзак</h4>
-                                        <p class="price">9 800 ₽</p>
+                                        <img src="./images/content/product-2.png" alt="jacket">
+                                        <h4>Спасательный жилет BRP Men's Airflow PFD</h4>
+                                        <p class="price">6 900 ₽</p>
                                         <p class="notify-text">нет в наличии</p>
                                     </a>
                                 </div>
@@ -300,10 +392,9 @@
                                     <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
                                     <a href="#" class="product-item">
                                         <p class="product-hover-text">посмотреть товар</p>
-                                        <img src="./images/content/product-1.png" alt="">
-                                        <h4>Водонепроницаемый
-                                            Рюкзак</h4>
-                                        <p class="price">9 800 ₽</p>
+                                        <img src="./images/content/product-3.png" alt="audio">
+                                        <h4> BRP Audio-Premium System</h4>
+                                        <p class="price">68 000 ₽</p>
                                         <p class="notify-text">нет в наличии</p>
                                     </a>
                                 </div>
@@ -315,9 +406,9 @@
                                     <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
                                     <a href="#" class="product-item product-sale">
                                         <p class="product-hover-text">посмотреть товар</p>
-                                        <img src="./images/content/product-1.png" alt="">
-                                        <h4>Водонепроницаемый
-                                            Рюкзак</h4>
+                                        <img src="./images/content/product-4.png" alt="sos">
+                                        <h4>Спасательное
+                                            снаряжение</h4>
                                         <p class="price">9 800 ₽</p>
                                         <p class="notify-text">нет в наличии</p>
                                     </a>
@@ -330,7 +421,7 @@
                                     <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
                                     <a href="#" class="product-item">
                                         <p class="product-hover-text">посмотреть товар</p>
-                                        <img src="./images/content/product-1.png" alt="">
+                                        <img src="./images/content/product-1.png" alt="bag">
                                         <h4>Водонепроницаемый
                                             Рюкзак</h4>
                                         <p class="price">9 800 ₽</p>
@@ -345,10 +436,9 @@
                                     <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
                                     <a href="#" class="product-item ">
                                         <p class="product-hover-text">посмотреть товар</p>
-                                        <img src="./images/content/product-1.png" alt="">
-                                        <h4>Водонепроницаемый
-                                            Рюкзак</h4>
-                                        <p class="price">9 800 ₽</p>
+                                        <img src="./images/content/product-2.png" alt="jacket">
+                                        <h4>Спасательный жилет BRP Men's Airflow PFD</h4>
+                                        <p class="price">6 900 ₽</p>
                                         <p class="notify-text">нет в наличии</p>
                                     </a>
                                 </div>
@@ -364,9 +454,8 @@
                                     <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
                                     <a href="#" class="product-item">
                                         <p class="product-hover-text">посмотреть товар</p>
-                                        <img src="./images/content/product-1.png" alt="">
-                                        <h4>Водонепроницаемый
-                                            Рюкзак</h4>
+                                        <img src="./images/content/engine-1.png" alt="engine">
+                                        <h4>Лодочный мотор Yadao 3.5 HP 2-х</h4>
                                         <p class="price">9 800 ₽</p>
                                         <p class="notify-text">нет в наличии</p>
                                     </a>
@@ -379,9 +468,8 @@
                                     <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
                                     <a href="#" class="product-item product-sale">
                                         <p class="product-hover-text">посмотреть товар</p>
-                                        <img src="./images/content/product-1.png" alt="">
-                                        <h4>Водонепроницаемый
-                                            Рюкзак</h4>
+                                        <img src="./images/content/engine-2.png" alt="engine">
+                                        <h4>Лодочный мотор Yamaha 15FMHS</h4>
                                         <p class="price">9 800 ₽</p>
                                         <p class="notify-text">нет в наличии</p>
                                     </a>
@@ -394,9 +482,8 @@
                                     <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
                                     <a href="#" class="product-item">
                                         <p class="product-hover-text">посмотреть товар</p>
-                                        <img src="./images/content/product-1.png" alt="">
-                                        <h4>Водонепроницаемый
-                                            Рюкзак</h4>
+                                        <img src="./images/content/engine-3.png" alt="engine">
+                                        <h4>Лодочный двухтактный мотор Mikatsu</h4>
                                         <p class="price">9 800 ₽</p>
                                         <p class="notify-text">нет в наличии</p>
                                     </a>
@@ -409,9 +496,8 @@
                                     <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
                                     <a href="#" class="product-item product-sale">
                                         <p class="product-hover-text">посмотреть товар</p>
-                                        <img src="./images/content/product-1.png" alt="">
-                                        <h4>Водонепроницаемый
-                                            Рюкзак</h4>
+                                        <img src="./images/content/engine-4.png" alt="engine">
+                                        <h4>Hangkai 3.5hp 2-х Лодочный мотор</h4>
                                         <p class="price">9 800 ₽</p>
                                         <p class="notify-text">нет в наличии</p>
                                     </a>
@@ -424,9 +510,8 @@
                                     <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
                                     <a href="#" class="product-item">
                                         <p class="product-hover-text">посмотреть товар</p>
-                                        <img src="./images/content/product-1.png" alt="">
-                                        <h4>Водонепроницаемый
-                                            Рюкзак</h4>
+                                        <img src="./images/content/engine-5.png" alt="engine">
+                                        <h4>Лодочный мотор Sea-Pro Т 2.6S</h4>
                                         <p class="price">9 800 ₽</p>
                                         <p class="notify-text">нет в наличии</p>
                                     </a>
@@ -439,9 +524,8 @@
                                     <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
                                     <a href="#" class="product-item ">
                                         <p class="product-hover-text">посмотреть товар</p>
-                                        <img src="./images/content/product-1.png" alt="">
-                                        <h4>Водонепроницаемый
-                                            Рюкзак</h4>
+                                        <img src="./images/content/engine-6.png" alt="engine">
+                                        <h4>Лодочный мотор Шкипер 6.0 HP 4-х</h4>
                                         <p class="price">9 800 ₽</p>
                                         <p class="notify-text">нет в наличии</p>
                                     </a>
@@ -449,19 +533,997 @@
                             </div>
                         </div>
                     </div>
-                    <div id="tab3" class="tabs-content products-content"></div>
-                    <div id="tab4" class="tabs-content products-content"></div>
-                    <div id="tab5" class="tabs-content products-content"></div>
-                    <div id="tab6" class="tabs-content products-content"></div>
+                    <div id="tab3" class="tabs-content products-content">
+                        <div class="product-slider">
+                            <div class="product-slider-item">
+                                <div class="product-item-wrapper">
+                                    <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                    <button class="favs"></button>
+                                    <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                    <a href="#" class="product-item">
+                                        <p class="product-hover-text">посмотреть товар</p>
+                                        <img src="./images/content/shina-1.png" alt="shina">
+                                        <h4>Шина MAXXIS MU-15 Vipr 9.00/26 R12</h4>
+                                        <p class="price">9 800 ₽</p>
+                                        <p class="notify-text">нет в наличии</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-slider-item">
+                                <div class="product-item-wrapper">
+                                    <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                    <button class="favs"></button>
+                                    <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                    <a href="#" class="product-item product-sale">
+                                        <p class="product-hover-text">посмотреть товар</p>
+                                        <img src="./images/content/shina-2.png" alt="shina">
+                                        <h4>Шины PITBULL GROWLER-XOR 27x11-14</h4>
+                                        <p class="price">6 900 ₽</p>
+                                        <p class="notify-text">нет в наличии</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-slider-item">
+                                <div class="product-item-wrapper ">
+                                    <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                    <button class="favs"></button>
+                                    <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                    <a href="#" class="product-item">
+                                        <p class="product-hover-text">посмотреть товар</p>
+                                        <img src="./images/content/shina-3.png" alt="shina">
+                                        <h4>Motors Motorcycle Parts Duro 25-115312-80-TT DM1153</h4>
+                                        <p class="price">68 000 ₽</p>
+                                        <p class="notify-text">нет в наличии</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-slider-item">
+                                <div class="product-item-wrapper not-available">
+                                    <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                    <button class="favs"></button>
+                                    <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                    <a href="#" class="product-item product-sale">
+                                        <p class="product-hover-text">посмотреть товар</p>
+                                        <img src="./images/content/shina-4.png" alt="shina">
+                                        <h4>Carlisle All Trail Front Tire </h4>
+                                        <p class="price">9 800 ₽</p>
+                                        <p class="notify-text">нет в наличии</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-slider-item">
+                                <div class="product-item-wrapper">
+                                    <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                    <button class="favs"></button>
+                                    <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                    <a href="#" class="product-item">
+                                        <p class="product-hover-text">посмотреть товар</p>
+                                        <img src="./images/content/shina-5.png" alt="shina">
+                                        <h4>Anvelopa ATV Sunf 22x11-9 A027 </h4>
+                                        <p class="price">9 800 ₽</p>
+                                        <p class="notify-text">нет в наличии</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-slider-item">
+                                <div class="product-item-wrapper">
+                                    <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                    <button class="favs"></button>
+                                    <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                    <a href="#" class="product-item ">
+                                        <p class="product-hover-text">посмотреть товар</p>
+                                        <img src="./images/content/shina-6.png" alt="shina">
+                                        <h4>SUNF A033 AT 25x8-12 65J 6PR TL E4</h4>
+                                        <p class="price">6 900 ₽</p>
+                                        <p class="notify-text">нет в наличии</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab4" class="tabs-content products-content">
+                        <div class="product-slider">
+                            <div class="product-slider-item">
+                                <div class="product-item-wrapper">
+                                    <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                    <button class="favs"></button>
+                                    <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                    <a href="#" class="product-item">
+                                        <p class="product-hover-text">посмотреть товар</p>
+                                        <img src="./images/content/product-5.png" alt="audio">
+                                        <h4>BRP Audio-портативная система</h4>
+                                        <p class="price">9 800 ₽</p>
+                                        <p class="notify-text">нет в наличии</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-slider-item">
+                                <div class="product-item-wrapper">
+                                    <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                    <button class="favs"></button>
+                                    <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                    <a href="#" class="product-item product-sale">
+                                        <p class="product-hover-text">посмотреть товар</p>
+                                        <img src="./images/content/product-6.png" alt="audio">
+                                        <h4>Garmin Echomap Plus 62cv</h4>
+                                        <p class="price">45 800 ₽</p>
+                                        <p class="notify-text">нет в наличии</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-slider-item">
+                                <div class="product-item-wrapper ">
+                                    <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                    <button class="favs"></button>
+                                    <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                    <a href="#" class="product-item">
+                                        <p class="product-hover-text">посмотреть товар</p>
+                                        <img src="./images/content/product-3.png" alt="audio">
+                                        <h4> BRP Audio-Premium System</h4>
+                                        <p class="price">68 000 ₽</p>
+                                        <p class="notify-text">нет в наличии</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-slider-item">
+                                <div class="product-item-wrapper not-available">
+                                    <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                    <button class="favs"></button>
+                                    <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                    <a href="#" class="product-item product-sale">
+                                        <p class="product-hover-text">посмотреть товар</p>
+                                        <img src="./images/content/electro-4.png" alt="audio">
+                                        <h4>Carlisle All Trail Front Tire </h4>
+                                        <p class="price">9 800 ₽</p>
+                                        <p class="notify-text">нет в наличии</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-slider-item">
+                                <div class="product-item-wrapper">
+                                    <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                    <button class="favs"></button>
+                                    <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                    <a href="#" class="product-item">
+                                        <p class="product-hover-text">посмотреть товар</p>
+                                        <img src="./images/content/electro-5.png" alt="audio">
+                                        <h4>Anvelopa ATV Sunf 22x11-9 A027 </h4>
+                                        <p class="price">9 800 ₽</p>
+                                        <p class="notify-text">нет в наличии</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-slider-item">
+                                <div class="product-item-wrapper">
+                                    <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                    <button class="favs"></button>
+                                    <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                    <a href="#" class="product-item ">
+                                        <p class="product-hover-text">посмотреть товар</p>
+                                        <img src="./images/content/electro-6.png" alt="audio">
+                                        <h4>SUNF A033 AT 25x8-12 65J 6PR TL E4</h4>
+                                        <p class="price">6 900 ₽</p>
+                                        <p class="notify-text">нет в наличии</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab5" class="tabs-content products-content">
+                        <div class="product-slider">
+                            <div class="product-slider-item">
+                                <div class="product-item-wrapper ">
+                                    <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                    <button class="favs"></button>
+                                    <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                    <a href="#" class="product-item">
+                                        <p class="product-hover-text">посмотреть товар</p>
+                                        <img src="./images/content/product-7.png" alt="Key">
+                                        <h4>RF D.E.S.S.TM Key</h4>
+                                        <p class="price">9 800 ₽</p>
+                                        <p class="notify-text">нет в наличии</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-slider-item">
+                                <div class="product-item-wrapper">
+                                    <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                    <button class="favs"></button>
+                                    <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                    <a href="#" class="product-item product-sale">
+                                        <p class="product-hover-text">посмотреть товар</p>
+                                        <img src="./images/content/product-6.png" alt="audio">
+                                        <h4>Garmin Echomap Plus 62cv</h4>
+                                        <p class="price">45 800 ₽</p>
+                                        <p class="notify-text">нет в наличии</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-slider-item">
+                                <div class="product-item-wrapper ">
+                                    <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                    <button class="favs"></button>
+                                    <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                    <a href="#" class="product-item">
+                                        <p class="product-hover-text">посмотреть товар</p>
+                                        <img src="./images/content/product-3.png" alt="audio">
+                                        <h4> BRP Audio-Premium System</h4>
+                                        <p class="price">68 000 ₽</p>
+                                        <p class="notify-text">нет в наличии</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-slider-item">
+                                <div class="product-item-wrapper not-available">
+                                    <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                    <button class="favs"></button>
+                                    <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                    <a href="#" class="product-item product-sale">
+                                        <p class="product-hover-text">посмотреть товар</p>
+                                        <img src="./images/content/electro-4.png" alt="audio">
+                                        <h4>Carlisle All Trail Front Tire </h4>
+                                        <p class="price">9 800 ₽</p>
+                                        <p class="notify-text">нет в наличии</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-slider-item">
+                                <div class="product-item-wrapper">
+                                    <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                    <button class="favs"></button>
+                                    <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                    <a href="#" class="product-item">
+                                        <p class="product-hover-text">посмотреть товар</p>
+                                        <img src="./images/content/electro-5.png" alt="audio">
+                                        <h4>Anvelopa ATV Sunf 22x11-9 A027 </h4>
+                                        <p class="price">9 800 ₽</p>
+                                        <p class="notify-text">нет в наличии</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-slider-item">
+                                <div class="product-item-wrapper">
+                                    <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                    <button class="favs"></button>
+                                    <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                    <a href="#" class="product-item ">
+                                        <p class="product-hover-text">посмотреть товар</p>
+                                        <img src="./images/content/electro-6.png" alt="audio">
+                                        <h4>SUNF A033 AT 25x8-12 65J 6PR TL E4</h4>
+                                        <p class="price">6 900 ₽</p>
+                                        <p class="notify-text">нет в наличии</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab6" class="tabs-content products-content">
+                        <div class="product-slider">
+                            <div class="product-slider-item">
+                                <div class="product-item-wrapper not-available">
+                                    <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                    <button class="favs"></button>
+                                    <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                    <a href="#" class="product-item product-sale">
+                                        <p class="product-hover-text">посмотреть товар</p>
+                                        <img src="./images/content/product-8.png" alt="costum">
+                                        <h4>Мужской костюм
+                                            3мм</h4>
+                                        <p class="price">7 000 ₽</p>
+                                        <p class="notify-text">нет в наличии</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-slider-item">
+                                <div class="product-item-wrapper">
+                                    <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                    <button class="favs"></button>
+                                    <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                    <a href="#" class="product-item">
+                                        <p class="product-hover-text">посмотреть товар</p>
+                                        <img src="./images/content/product-1.png" alt="bag">
+                                        <h4>Водонепроницаемый
+                                            Рюкзак</h4>
+                                        <p class="price">9 800 ₽</p>
+                                        <p class="notify-text">нет в наличии</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-slider-item">
+                                <div class="product-item-wrapper">
+                                    <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                    <button class="favs"></button>
+                                    <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                    <a href="#" class="product-item product-sale">
+                                        <p class="product-hover-text">посмотреть товар</p>
+                                        <img src="./images/content/product-2.png" alt="jacket">
+                                        <h4>Спасательный жилет BRP Men's Airflow PFD</h4>
+                                        <p class="price">6 900 ₽</p>
+                                        <p class="notify-text">нет в наличии</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-slider-item">
+                                <div class="product-item-wrapper not-available">
+                                    <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                    <button class="favs"></button>
+                                    <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                    <a href="#" class="product-item product-sale">
+                                        <p class="product-hover-text">посмотреть товар</p>
+                                        <img src="./images/content/electro-4.png" alt="audio">
+                                        <h4>Carlisle All Trail Front Tire </h4>
+                                        <p class="price">9 800 ₽</p>
+                                        <p class="notify-text">нет в наличии</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-slider-item">
+                                <div class="product-item-wrapper">
+                                    <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                    <button class="favs"></button>
+                                    <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                    <a href="#" class="product-item">
+                                        <p class="product-hover-text">посмотреть товар</p>
+                                        <img src="./images/content/electro-5.png" alt="audio">
+                                        <h4>Anvelopa ATV Sunf 22x11-9 A027 </h4>
+                                        <p class="price">9 800 ₽</p>
+                                        <p class="notify-text">нет в наличии</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-slider-item">
+                                <div class="product-item-wrapper">
+                                    <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                    <button class="favs"></button>
+                                    <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                    <a href="#" class="product-item ">
+                                        <p class="product-hover-text">посмотреть товар</p>
+                                        <img src="./images/content/electro-6.png" alt="audio">
+                                        <h4>SUNF A033 AT 25x8-12 65J 6PR TL E4</h4>
+                                        <p class="price">6 900 ₽</p>
+                                        <p class="notify-text">нет в наличии</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="product-more">
                     <a class="product-more-link" href="#">Показать еще</a>
                 </div>
         </div>
     </section>
+    <div class="center banner">
+    <div class="banner-div">
+            <img class="atv" src="./images/atv.png" alt="atv">
+            <img class="rover" src="./images/banner-img.png" alt="rover">
+        <h3>CКИДКИ на все запчасти  до 70%</h3>
+        <div>
+            <a href="#">ПОСМОТЕТЬ ВСЕ</a>
+        </div>
+            
+    </div>
+</div>
+
+    <section class="products center">
+        <div class="products-inner">
+            <h1 class="product-title">Популярные товары</h1>
+            <div class="tabs-wrapper">
+                <div class="tabs products-tabs mobile-overflow">
+                    <a class="tab tab-active products-tab" href="#tab_1">запчасти</a>
+                    <a class="tab products-tab" href="#tab_2">моторы</a>
+                    <a class="tab products-tab" href="#tab_3">шины</a>
+                    <a class="tab products-tab" href="#tab_4">электроника</a>
+                    <a class="tab products-tab" href="#tab_5">инструменты</a>
+                    <a class="tab products-tab" href="#tab_6">аксессуары</a>
+                </div>
+            </div>
+            <div class="tabs-container products-container">
+                <div id="tab_1" class="tabs-content tabs-content-active products-content">
+                    <div class="product-slider">
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/product-5.png" alt="audio">
+                                    <h4>BRP Audio-портативная система</h4>
+                                    <p class="price">9 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item product-sale">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/product-6.png" alt="audio">
+                                    <h4>Garmin Echomap Plus 62cv</h4>
+                                    <p class="price">45 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper ">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/product-7.png" alt="Key">
+                                    <h4>RF D.E.S.S.TM Key</h4>
+                                    <p class="price">9 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper not-available">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item product-sale">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/product-8.png" alt="costum">
+                                    <h4>Мужской костюм
+                                        3мм</h4>
+                                    <p class="price">7 000 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/product-1.png" alt="bag">
+                                    <h4>Водонепроницаемый
+                                        Рюкзак</h4>
+                                    <p class="price">9 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item ">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/product-2.png" alt="jacket">
+                                    <h4>Спасательный жилет BRP Men's Airflow PFD</h4>
+                                    <p class="price">9 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab_2" class="tabs-content products-content">
+                    <div class="product-slider">
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/engine-1.png" alt="engine">
+                                    <h4>Лодочный мотор Yadao 3.5 HP 2-х</h4>
+                                    <p class="price">9 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item product-sale">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/engine-2.png" alt="engine">
+                                    <h4>Лодочный мотор Yamaha 15FMHS</h4>
+                                    <p class="price">9 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper ">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/engine-3.png" alt="engine">
+                                    <h4>Лодочный двухтактный мотор Mikatsu</h4>
+                                    <p class="price">9 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper not-available">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item product-sale">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/engine-4.png" alt="engine">
+                                    <h4>Hangkai 3.5hp 2-х Лодочный мотор</h4>
+                                    <p class="price">9 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/engine-5.png" alt="engine">
+                                    <h4>Лодочный мотор Sea-Pro Т 2.6S</h4>
+                                    <p class="price">9 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item ">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/engine-6.png" alt="engine">
+                                    <h4>Лодочный мотор Шкипер 6.0 HP 4-х</h4>
+                                    <p class="price">9 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab_3" class="tabs-content products-content">
+                    <div class="product-slider">
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/shina-1.png" alt="shina">
+                                    <h4>Шина MAXXIS MU-15 Vipr 9.00/26 R12</h4>
+                                    <p class="price">9 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item product-sale">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/shina-2.png" alt="shina">
+                                    <h4>Шины PITBULL GROWLER-XOR 27x11-14</h4>
+                                    <p class="price">6 900 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper ">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/shina-3.png" alt="shina">
+                                    <h4>Motors Motorcycle Parts Duro 25-115312-80-TT DM1153</h4>
+                                    <p class="price">68 000 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper not-available">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item product-sale">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/shina-4.png" alt="shina">
+                                    <h4>Carlisle All Trail Front Tire </h4>
+                                    <p class="price">9 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/shina-5.png" alt="shina">
+                                    <h4>Anvelopa ATV Sunf 22x11-9 A027 </h4>
+                                    <p class="price">9 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item ">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/shina-6.png" alt="shina">
+                                    <h4>SUNF A033 AT 25x8-12 65J 6PR TL E4</h4>
+                                    <p class="price">6 900 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab_4" class="tabs-content products-content">
+                    <div class="product-slider">
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/product-5.png" alt="audio">
+                                    <h4>BRP Audio-портативная система</h4>
+                                    <p class="price">9 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item product-sale">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/product-6.png" alt="audio">
+                                    <h4>Garmin Echomap Plus 62cv</h4>
+                                    <p class="price">45 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper ">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/product-3.png" alt="audio">
+                                    <h4> BRP Audio-Premium System</h4>
+                                    <p class="price">68 000 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper not-available">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item product-sale">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/electro-4.png" alt="audio">
+                                    <h4>Carlisle All Trail Front Tire </h4>
+                                    <p class="price">9 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/electro-5.png" alt="audio">
+                                    <h4>Anvelopa ATV Sunf 22x11-9 A027 </h4>
+                                    <p class="price">9 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item ">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/electro-6.png" alt="audio">
+                                    <h4>SUNF A033 AT 25x8-12 65J 6PR TL E4</h4>
+                                    <p class="price">6 900 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab_5" class="tabs-content products-content">
+                    <div class="product-slider">
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper ">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/product-7.png" alt="Key">
+                                    <h4>RF D.E.S.S.TM Key</h4>
+                                    <p class="price">9 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item product-sale">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/product-6.png" alt="audio">
+                                    <h4>Garmin Echomap Plus 62cv</h4>
+                                    <p class="price">45 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper ">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/product-3.png" alt="audio">
+                                    <h4> BRP Audio-Premium System</h4>
+                                    <p class="price">68 000 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper not-available">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item product-sale">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/electro-4.png" alt="audio">
+                                    <h4>Carlisle All Trail Front Tire </h4>
+                                    <p class="price">9 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/electro-5.png" alt="audio">
+                                    <h4>Anvelopa ATV Sunf 22x11-9 A027 </h4>
+                                    <p class="price">9 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item ">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/electro-6.png" alt="audio">
+                                    <h4>SUNF A033 AT 25x8-12 65J 6PR TL E4</h4>
+                                    <p class="price">6 900 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab_6" class="tabs-content products-content">
+                    <div class="product-slider">
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper not-available">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item product-sale">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/product-8.png" alt="costum">
+                                    <h4>Мужской костюм
+                                        3мм</h4>
+                                    <p class="price">7 000 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/product-1.png" alt="bag">
+                                    <h4>Водонепроницаемый
+                                        Рюкзак</h4>
+                                    <p class="price">9 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item product-sale">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/product-2.png" alt="jacket">
+                                    <h4>Спасательный жилет BRP Men's Airflow PFD</h4>
+                                    <p class="price">6 900 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper not-available">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item product-sale">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/electro-4.png" alt="audio">
+                                    <h4>Carlisle All Trail Front Tire </h4>
+                                    <p class="price">9 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/electro-5.png" alt="audio">
+                                    <h4>Anvelopa ATV Sunf 22x11-9 A027 </h4>
+                                    <p class="price">9 800 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-item">
+                            <div class="product-item-wrapper">
+                                <button class="cart"><img src="./images/cart-white.svg" alt="cart"></button>
+                                <button class="favs"></button>
+                                <a class="notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                                <a href="#" class="product-item ">
+                                    <p class="product-hover-text">посмотреть товар</p>
+                                    <img src="./images/content/electro-6.png" alt="audio">
+                                    <h4>SUNF A033 AT 25x8-12 65J 6PR TL E4</h4>
+                                    <p class="price">6 900 ₽</p>
+                                    <p class="notify-text">нет в наличии</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="center">
+          <div class="footer-top">
+            <div class="footer-top-inner">
+              <div class="footer-top-item footer-top-newsLatter">
+                <h6 class="footer-top-title">
+                  Подпишитесь на нашу рассылку и узнавайте о акция быстрее
+                </h6>
+                <form class="footer-form">
+                  <input type="text" placeholder="Введите ваш e-mail:">
+                  <button type="submit">Отправить</button>
+                </form>
+              </div>
+              <div class="footer-top-item footer-top-itemDrop">
+                <h6 class="footer-top-title footer-topDrop">Информация</h6>
+                <ul class="footer-list">
+                  <li><a href="#">О компании</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#">Акции</a></li>
+                  <li><a href="#">Магазины</a></li>
+                </ul>
+              </div>
+              <div class="footer-top-item">
+                <p class="footer-top-title footer-topDrop">Интернет-магазин</p>
+                <ul class="footer-list">
+                  <li><a href="#">Доставка и самовывоз</a></li>
+                  <li><a href="#">Оплата</a></li>
+                  <li><a href="#">Возврат-обмен</a></li>
+                  <li><a href="#">Новости</a></li>
+                </ul>
+              </div>
+              <div class="footer-top-item footer-top-social">
+                <ul class="social-list animate__animated animate__tada">
+                  <li class="social-list-item"><a href="#">
+                    <img src="./images/icon-instagram.svg" alt="instagram">
+                  </a></li>
+                  <li class="social-list-item"><a href="#">
+                    <img src="./images/icon-vk.svg" alt="vk">
+                  </a></li>
+                  <li class="social-list-item"><a href="#">
+                    <img src="./images/icon-facebook.svg" alt="facebook">
+                  </a></li>
+                  <li class="social-list-item"><a href="#">
+                    <img src="./images/icon-youtube.svg" alt="youtube">
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <a class="footer-bottom-link" href="#">Договор оферты</a>
+            <a class="footer-bottom-link" href="#">Политика обработки персональных данных</a>
+          </div>
+        </div>
+      </footer>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="./js/slick.min.js"></script>
+<script src="./js/wow.js"></script>
+<script>
+    const wow = new WOW({
+        boxClass: 'wow', /* класс, который необходим для работы wow.js */
+        animateClass: 'animate__animated', /* класс, который будет автоматически добавляться анимируемым элементам при прокрутке страницы */
+        offset: 30, /* по-умолчанию установлено значение 0, то есть как только при прокрутке страницы, элемент достигает низа окна браузера проигрываться анимация, в данном случае анимация начнется на 30px выше от низа окна браузера */
+        mobile: true, /* если true, то на мобильных тоже будет анимация, если false, то на мобильных анимация отключается */
+        live: true /* если true, то анимация будет работать даже на динамически добавляемых элементах, если false, то только на тех элементах, которые были на странице при ее загрузке */
+    })
+    wow.init(); /* Инициализация плагина с установленными выше свойствами */
+</script>
 <script src="./js/main.js"></script>
 </body>
 </html>
